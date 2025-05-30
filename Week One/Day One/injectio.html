@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reflected HTML Injection Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 30px;
+    }
+    input {
+      padding: 5px;
+      width: 300px;
+    }
+    #output {
+      margin-top: 20px;
+      border: 1px dashed #999;
+      padding: 10px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML/Text Injection via URL Parameter</h1>
+  <label for="userInput">Type something (then press Enter or use <code>?q=</code> in the URL):</label><br><br>
+  <input type="text" id="userInput">
+
+  <div id="output"></div>
+
+  <script>
+    function getQueryParam(key) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(key) || '';
+    }
+
+    function reflect(input) {
+      document.getElementById("output").innerHTML = input;
+    }
+
+    window.onload = function () {
+      const paramInput = getQueryParam("q");
+      document.getElementById("userInput").value = paramInput;
+      reflect(paramInput);
+    }
+
+    const inputBox = document.getElementById("userInput");
+    inputBox.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const value = inputBox.value;
+        // Redirect with q= param to simulate reflected injection
+        window.location.search = '?q=' + encodeURIComponent(value);
+      }
+    });
+
+    inputBox.addEventListener("input", function () {
+      reflect(inputBox.value);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+- Learn **simplified ethical hacking techniques** from scratch
+- Learn **Linux basics**
+- Learn **Networking**
+- Learn **10+ web application attacks**
+- Learn more than **3 proven methods of Social - Engineering attacks**
+- Make better decisions on how to protect your applications and network
+- Learn how to **think like a crazy man**
+- Learn how to **actually learn** with **ai** 
+- Learn how to use **ai to ease your work flow** 
+- Learn how to **write a professional penetration testing report**
