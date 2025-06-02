@@ -174,3 +174,23 @@ find /path -name "*.sh"  # find shell scripts recursively
 ```
 
 ---
+
+### 🗄**Manual Of Tools**
+
+To know more about any tools, we can use `tldr` (third party application),
+Or, We should use `man`
+
+- To Use `tldr`:
+```shell
+apt install tldr -y
+tldr <name>
+```
+
+- To Use `man`:
+```bash
+man <name>
+```
+
+---
+ 
+### 🐚 **Learn [[Shell Scripting Basics]]**

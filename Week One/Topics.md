@@ -1,4 +1,4 @@
-### Day 1: Introduction to Cybersecurity
+### Day 1: [[Cybersecurity Introduction]]
 
 **Theory & Discussion:**  
 - Cybersecurity domains, 
@@ -10,8 +10,7 @@
 - PostSwigger, Kali.org
 
 ---
-### Day 2: Installation of linux & Linux Basics
-
+### Day 2: Installation of linux & [[Linux Basics]]
 **Theory & Discussion:**  
 File system, permissions, processes, basic bash commands.
 
@@ -19,7 +18,7 @@ File system, permissions, processes, basic bash commands.
 Kali Terminal, htop, chmod, chown
 
 ---
-### Day 3: Shell Scripting Basics
+### Day 3: [[Shell Scripting Basics]]
 
 **Theory & Discussion:**  
 Intro to Bash scripting, automation concepts.
